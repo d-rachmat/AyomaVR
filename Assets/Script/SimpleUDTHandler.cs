@@ -92,7 +92,7 @@ public class SimpleUDTHandler : MonoBehaviour , IUserDefinedTargetEventHandler{
 			if (GUI.Button(new Rect(200, Screen.height - 100, 200, 90), "Render")) {
 				// jika button Render ditekan maka akan melakukan capture pada gambar dan disimpan dengan nama gambar.png
 				// gambar hasil capture ini disimpan pada SDCard sehingga write Access harus diubah ke External (SDCard)
-				Application.CaptureScreenshot("gambar.png");
+				ScreenCapture.CaptureScreenshot("gambar.png");
 				// jika gambar sudah di capture maka lakukan perubahan / penggantian texture pada objek kaleng
 				newTarget=true;
 
